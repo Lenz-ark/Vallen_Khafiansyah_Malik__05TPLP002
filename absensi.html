@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Informasi Manajemen Karyawan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="absensi.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <img src="khafian_vall_3341389807921068521.jpg" alt="Profile Picture">
+            <h2>Welcome, Vallen Khafiansyah Malik</h2>
+            <p>Administrator</p>
+        </div>
+        <div class="menu">
+            <a href="index.html" class=""><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            <div class="menu-section">
+                <h3>MENU KARYAWAN</h3>
+                <a href="karyawan.html"><i class="fas fa-users"></i> Karyawan</a>
+                <a href="jabatan.html"><i class="fas fa-briefcase"></i> Jabatan</a>
+                <a href="divisi.html"><i class="fas fa-building"></i> Divisi</a>
+            </div>
+            <div class="menu-section">
+                <h3>MENU ABSENSI</h3>
+                <a href="absensi.html"><i class="fas fa-calendar-check"></i> Absensi</a>
+                <a href="izin.html"><i class="fas fa-calendar-times"></i> Izin</a>
+                <a href="lembur.html"><i class="fas fa-clock"></i> Lembur</a>
+            </div>
+            <div class="menu-section">
+                <h3>MENU PENGGAJIAN</h3>
+                <a href="#"><i class="fas fa-money-bill"></i> Slip Gaji</a>
+                <a href="#"><i class="fas fa-print"></i> Cetak Slip Gaji</a>
+            </div>
+            <div class="menu-section">
+                <h3>MENU LAPORAN</h3>
+                <a href="#"><i class="fas fa-print"></i> Cetak Laporan</a>
+            </div>
+            <div class="menu-section">
+                <h3>MENU ADMIN</h3>
+                <a href="#"><i class="fas fa-user"></i> Pengguna</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Sistem Informasi Manajemen Karyawan</h1>
+            <div class="profile">
+                <img src="unpam.png" alt="Profile Picture">
+            </div>
+        </div>
+<div class="attendance-section">
+    <h2>Daftar Hadir Karyawan</h2>
+    <input type="text" id="searchInput" placeholder="Cari Nama Karyawan" onkeyup="searchTable()">
+    
+    <table id="attendanceTable">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Nama Karyawan</th>
+                <th>Tanggal</th>
+                <th>Lokasi Absen</th>
+                <th>Jam Masuk</th>
+                <th>Jam Keluar</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Yohan Fikri</td>
+                <td>2023-05-10</td>
+                <td>Kampus Kimia</td>
+                <td>16:21:14</td>
+                <td>18:22:48</td>
+                <td><button onclick="alert('Aksi untuk Yohan Fikri')">Details</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Arne Slot</td>
+                <td>2023-05-10</td>
+                <td>UNPAM Viktor</td>
+                <td>16:12:04</td>
+                <td>18:24:08</td>
+                <td><button onclick="alert('Aksi untuk Arne Slot')">Details</button></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Darwin Nunez</td>
+                <td>2023-05-10</td>
+                <td>UNPAM Viktor</td>
+                <td>16:15:54</td>
+                <td>18:25:28</td>
+                <td><button onclick="alert('Aksi untuk Darwin Nunez')">Details</button></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mohammed Salah</td>
+                <td>2023-05-10</td>
+                <td>UNPAM Viktor</td>
+                <td>16:17:34</td>
+                <td>18:29:58</td>
+                <td><button onclick="alert('Aksi untuk Mohammed Salah')">Details</button></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Dominic Szobozslai</td>
+                <td>2023-05-10</td>
+                <td>UNPAM Viktor</td>
+                <td>16:02:04</td>
+                <td>18:34:08</td>
+                <td><button onclick="alert('Aksi untuk Dominic Szobozslai')">Details</button></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Caomhin Kelleher</td>
+                <td>2023-05-10</td>
+                <td>Kampus Kimia</td>
+                <td>16:10:54</td>
+                <td>18:14:38</td>
+                <td><button onclick="alert('Aksi untuk Caomhin Kelleher')">Details</button></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Lionel Messi</td>
+                <td>2023-05-10</td>
+                <td>UNPAM Viktor</td>
+                <td>16:11:44</td>
+                <td>18:44:18</td>
+                <td><button onclick="alert('Aksi untuk Lionel Messi')">Details</button></td>
+            </tr>
+            <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+        </tbody>
+    </table>
+</div>
+</div>
+</body>
+</html>

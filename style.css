@@ -1,0 +1,128 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Scroll */
+}
+
+.sidebar .header {
+    padding: 20px;
+    background-color: #0056b3;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sidebar .header img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sidebar .header h2 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+}
+
+.sidebar .header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.sidebar .menu {
+    padding: 20px;
+}
+
+.sidebar .menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sidebar .menu a.active,
+.sidebar .menu a:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.main-content .header {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content .header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-content .header .profile {
+    display: flex;
+    align-items: center;
+}
+
+.main-content .header .profile img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-content .dashboard {
+    padding: 20px;
+}
+
+.main-content .dashboard h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main-content .dashboard .cards {
+    display: flex;
+    gap: 20px;
+}
+
+.main-content .dashboard .card {
+    background-color: #1fabe2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    flex: 1;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.main-content .dashboard .card i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.main-content .dashboard .card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.main-content .dashboard .card p {
+    margin: 0;
+    font-size: 16px;
+}
